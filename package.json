@@ -7,6 +7,7 @@
     "build:placeholderenv": "VUE_APP_GRAPHQL_HTTP=VUE_APP_GRAPHQL_HTTP_PLACEHOLDER VUE_APP_GRAPHQL_WS=VUE_APP_GRAPHQL_WS_PLACEHOLDER npm run build",
     "lint": "vue-cli-service lint --no-fix",
     "lint:fix": "vue-cli-service lint",
+    "test": "npm run lint",
     "serve": "serve -l 8080 -s dist",
     "replaceenv": "sed -i 's^VUE_APP_GRAPHQL_HTTP_PLACEHOLDER^'$VUE_APP_GRAPHQL_HTTP'^g' dist/js/* && sed -i 's^VUE_APP_GRAPHQL_WS_PLACEHOLDER^'$VUE_APP_GRAPHQL_WS'^g' dist/js/*",
     "replaceenv-serve": "npm run replaceenv && npm run serve"
